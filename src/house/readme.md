@@ -5,6 +5,8 @@ of its public properties and methods.
 
 ## Properties
 
+> There are no public properties exist.
+
 ## Methods
 
 ### setWallSuppliesCalculator( `calculator: (inches: number) => IWallCalculatorResponse` ): void

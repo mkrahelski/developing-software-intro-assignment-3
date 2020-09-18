@@ -17,7 +17,7 @@ export class Houses extends Map<string, IHouse> {
         };
     };
 
-    public static setCalculator(
+    public static setWallSuppliesCalculator(
         calculator: (inches: number) => IWallCalculatorResponse
     ): void {
         this.calculator = calculator;
@@ -55,11 +55,20 @@ export class Houses extends Map<string, IHouse> {
         return houses;
     }
 
+    public static create(name: string): House {
+        const house = new House(this.calculator);
+        house.name = name;
+        return house;
+    }
+
     public static save(house: House): void {
         const data = {
             name: house.name,
             width: house.width,
             length: house.length,
+            posts: house.posts,
+            plates: house.plates,
+            studs: house.studs,
         };
 
         fs.writeFileSync(

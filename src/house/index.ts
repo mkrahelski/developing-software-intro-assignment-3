@@ -27,7 +27,7 @@ export class House implements IHouse {
     }
 
     get posts(): number {
-        return (this.widthMaterials.posts + this.lengthMaterials.posts) * 2;
+        return (this.widthMaterials.posts + this.lengthMaterials.posts) * 2 + 4;
     }
 
     get studs(): number {
@@ -42,13 +42,12 @@ export class House implements IHouse {
         private calculator: (inches: number) => IWallCalculatorResponse,
         data?: IHouseProperties
     ) {
-        if (data) {
-            Object.assign(this, data);
-        }
+        data?.name && (this.name = data.name);
+        data?.width && (this.width = data.width);
+        data?.length && (this.length = data.length);
     }
 
     private calculateMaterials() {
-        console.log("Calculating...");
         this.widthMaterials = this.calculator(this.width);
         this.lengthMaterials = this.calculator(this.length);
     }

@@ -1,64 +1,19 @@
-# TypeScript Boilerplate
+# Focus College ACSD Assignment 3
 
-This boilerplate comes installed with the following packages:
+This respository is intended for the use of Focus College Students enrolled in the Advanced Certificate of Software Development located in Kelowna, BC and Surrey, BC.
 
-- ESLint (Linting)
-  - .eslintrc
-  - .eslintignore
+---
 
-- Prettier (Code Formatting)
-  - .prettierrc.json
-  - .prettierignore
+You can remove everything below the above line once you're ready to edit this file.
 
-- Typescript Compiler
-  - tsconfig.json
+## Getting Started
 
-- Git Repository
-  - .gitignore
+Please read the [Assignment Requirements](./assignments/assignment.md).
 
+## Deadline for Submissions
 
-## Installation Instructions
+The deadline for this assignment is 5PM on THURSDAY SEPTEMBER 24th, 2020.
 
-To install this package, please run: `npm install`
+## Notes
 
-## Start Scripts
-
-This package has 3 start scripts:
-
-`npm run start`
-- This script will run 
-  - `node dist/index.js`
-
-To run the linter and code formetter in report only mode
-( NO changes will be made to your code ).
-
-`npm run start:dev`
-- This script will run:
-  - `npm run build`
-  - `npm run start`
-
-To run the linter and code formatter in fix mode (changes WILL be made to your code):
-
-`npm run start:dev:fix`
-- This script will run:
-  - `npm run build:fix`
-  - `npm run start`
-
-To skip linting and formatting:
-
-`npm run start:dev:notest`
-- This script will run:
-  - `npm run build:compile`
-  - `npm run start`
-
-### Supporting Scripts
-
-`npm run build`
-  - `npm run build:lint`
-  - `npm run build:prettier`
-  - `npm run build:compile`
-
-`npm run build:fix`
-  - `npm run build:lint:fix`
-  - `npm run build:prettier:fix`
-  - `npm run build:compile`
+This is a PUBLIC repository attached to your github account and something that you can demonstrate to potential employers. Take care to ensure professionalism for both you and your team's sake. This will be the first entry into your professional portfolio.

@@ -25,6 +25,23 @@ export function calcWoodNeeded(yargs: Argv): void {
                 alias: "l",
                 description: "The length of the house",
             },
+
+            inches: {
+                type: "string",
+                alias: "I",
+                description: "Declaration of units 'inches'.",
+            },
+
+            feet: {
+                type: "string",
+                alias: "F",
+                description: "Declaration of units 'width'.",
+            },
+
+
+
+
+
         },
 
         // define the function we want to run once the arguments are parsed
@@ -34,12 +51,16 @@ export function calcWoodNeeded(yargs: Argv): void {
                 length: number;
                 w: number;
                 l: number;
+             //added    
+                I: string;
+                F: string;
+
             }>
         ) {
             
             const requirements = calculateHouseRequirements(
                 args.width,
-                args.length
+                args.length,
             );
 
             console.log( requirements );

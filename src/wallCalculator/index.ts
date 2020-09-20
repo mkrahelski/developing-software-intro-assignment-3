@@ -154,9 +154,18 @@ export function calculateHouseRequirements(
 */
 
 
-//*******!!!!!!!!!! */
+) 
 
-) {
+//logicking it up.
+    //the input below is designed for inches
+
+// if ( theInput , equality, inches /12)
+// else meaning it's not inches. It would have to be feet. *12. So that the below can basically function the same.
+
+//I think I am also missing that you have to adjust width in feet and length in feet for these operations. Before.
+//THe rest of the operation but as modifiers go. It seems simple enough.
+
+{
     // convert feet to inches
     const outerWidthOfHouse = convertFeetToInches(widthInFeet);
     const outerLengthOfHouse = convertFeetToInches(lengthInFeet);

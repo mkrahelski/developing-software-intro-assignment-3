@@ -135,6 +135,8 @@ function accountForWaste(items: number): number {
 export function calculateHouseRequirements(
     widthInFeet: number,
     lengthInFeet: number
+    //Attemtping to solve by adding 2 more variables.
+
     
 
     //is it here where the overload starts, as the imported function has only 2 slots though who knows

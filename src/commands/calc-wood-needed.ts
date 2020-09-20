@@ -56,15 +56,29 @@ export function calcWoodNeeded(yargs: Argv): void {
                 F: string;
 
             }>
-        ) {
-            
+        ) 
+        
+
+
+
+
+    //seperate function or do I put it into calculate house req.
+    // might need to read more in depth through it.
+
+    //I think I found the pain point. need to inject the string.
+
+
+        {          
             const requirements = calculateHouseRequirements(
                 args.width,
                 args.length,
+                args.inches,
+                args.feet,
             );
 
             console.log( requirements );
-
         }
-    );
+  
+  
+        );
 }

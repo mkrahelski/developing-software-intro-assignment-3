@@ -135,6 +135,24 @@ function accountForWaste(items: number): number {
 export function calculateHouseRequirements(
     widthInFeet: number,
     lengthInFeet: number
+    
+
+    //is it here where the overload starts, as the imported function has only 2 slots though who knows
+
+
+//I think this is where it would go? Seems bout right.
+//export >fun> widthinfeet input?length in feet input.
+//notation just surprised me.
+
+//Q1 Fithinfeet:number
+//Q2 Lengthinfeet:number, what is this related 2. THe function is imported into yargs but the command isn't
+//directly referenced
+/*
+*/
+
+
+//*******!!!!!!!!!! */
+
 ) {
     // convert feet to inches
     const outerWidthOfHouse = convertFeetToInches(widthInFeet);

@@ -35,7 +35,7 @@ export function calcWoodNeeded(yargs: Argv): void {
             feet: {
                 type: "string",
                 alias: "F",
-                description: "Declaration of units 'width'.",
+                description: "Declaration of units 'feet'.",
             },
 
 
@@ -51,7 +51,10 @@ export function calcWoodNeeded(yargs: Argv): void {
                 length: number;
                 w: number;
                 l: number;
-             //added    
+             //added
+             //so do I need to list them both, alias/parameter??
+                inches: string;
+                feet: string;
                 I: string;
                 F: string;
 

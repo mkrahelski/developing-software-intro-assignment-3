@@ -4,16 +4,30 @@ This respository is intended for the use of Focus College Students enrolled in t
 
 ---
 
-You can remove everything below the above line once you're ready to edit this file.
+## Gerald's Calculator 
+---
+__Please Read Prior to using__
 
-## Getting Started
+* ### Parameterization Functionality added
 
-Please read the [Assignment Requirements](./assignment/assignment.md).
 
-## Deadline for Submissions
+To utilize parameters read this.
 
-The deadline for this assignment is 5PM on THURSDAY SEPTEMBER 24th, 2020.
+1. Find Length and feet of your given room. Then convert into either feet or inches.
 
-## Notes
+Finally input width and length after -w -l below with a space. 
+~~~~
+npm start -- calc-wood-needed -w -l -u 
 
-This is a PUBLIC repository attached to your github account and something that you can demonstrate to potential employers. Take care to ensure professionalism for both you and your team's sake. This will be the first entry into your professional portfolio.
+~~~~
+
+2. To select for specific units add feet or inches after -u with a space, an example is provided below
+
+~~~~~
+npm start -- calc-wood-needed -w 49 -l 22 -u feet
+~~~~~~
+3. Further example using inches.
+
+~~~~~~
+npm start -- calc-wood-needed -w 588 -l 264 -u inches
+~~~~~~

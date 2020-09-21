@@ -164,8 +164,14 @@ export function calculateHouseRequirements(
 //I think I am also missing that you have to adjust width in feet and length in feet for these operations. Before.
 //THe rest of the operation but as modifiers go. It seems simple enough.
 {
-    let widthToFeetConversion 
-    let lengthToFeetConversion
+    let widthToFeetConversion = widthInFeet;
+    let lengthToFeetConversion = lengthInFeet;
+    //I can't think of a cleaner way to do this right now.
+    //basically equal to widthin feet. Code is read top to bottom.
+    //if the if doesn't trigger. It just works like normal if not we reset the variable.
+    //If it doesn't work I'll add 2 more variables and brute force it. -Simplicity and -Optimization 
+
+
 //if u flag is inches. Does this conversion. otherise nope. :I 
     if (units == "inches")
     { 
@@ -173,6 +179,8 @@ export function calculateHouseRequirements(
         lengthToFeetConversion = lengthInFeet/12;
         //problem is I don't know if it works.
              //the problem is really two fold. This technically works but isn't wholly bound.
+
+        //inches works perfectly. Feet alternatively don't pass through because we don't have an else that sets it.
     }
 
 

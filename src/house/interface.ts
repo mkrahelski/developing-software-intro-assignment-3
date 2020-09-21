@@ -23,3 +23,5 @@ export interface IHouseMaterials {
 }
 
 export interface IHouse extends IHouseProperties, IHouseMaterials {}
+
+//re-examine, to incorp the string parameters

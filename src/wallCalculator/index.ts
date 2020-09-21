@@ -136,9 +136,10 @@ export function calculateHouseRequirements(
     widthInFeet: number,
     lengthInFeet: number,
     //Attemtping to solve by adding 2 more variables.
-    Feet:string,
-    Inches:string,
-
+    inches:string,
+    feet:string, //is greyed out because it's un-used. This and other ui tool tips brought to you by transparency
+   // are these technically just variables, don't we then need a clarification, length and width are interchangeble
+)
 
     //is it here where the overload starts, as the imported function has only 2 slots though who knows
 
@@ -153,9 +154,6 @@ export function calculateHouseRequirements(
 /*
 */
 
-
-) 
-
 //logicking it up.
     //the input below is designed for inches
 
@@ -164,8 +162,15 @@ export function calculateHouseRequirements(
 
 //I think I am also missing that you have to adjust width in feet and length in feet for these operations. Before.
 //THe rest of the operation but as modifiers go. It seems simple enough.
-
 {
+    if (inches == "inches")
+    { 
+        widthInFeet/12;
+        lengthInFeet/12;
+        //problem is I don't know if it works.
+    }
+    //if it already converts feet to inches we just have a problem if it's already in inches :)
+
     // convert feet to inches
     const outerWidthOfHouse = convertFeetToInches(widthInFeet);
     const outerLengthOfHouse = convertFeetToInches(lengthInFeet);

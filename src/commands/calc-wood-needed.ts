@@ -26,17 +26,13 @@ export function calcWoodNeeded(yargs: Argv): void {
                 description: "The length of the house",
             },
 
-            inches: {
+            units: {
                 type: "string",
-                alias: "I",
-                description: "Declaration of units 'inches'.",
+                alias: "u",
+                description: "Declaration of units units.",
             },
 
-            feet: {
-                type: "string",
-                alias: "F",
-                description: "Declaration of units 'feet'.",
-            },
+            
 
 
 
@@ -53,10 +49,8 @@ export function calcWoodNeeded(yargs: Argv): void {
                 l: number;
              //added
              //so do I need to list them both, alias/parameter??
-                inches: string;
-                feet: string;
-                I: string;
-                F: string;
+               u: string;
+               units: string;
 
             }>
         ) 
@@ -75,8 +69,7 @@ export function calcWoodNeeded(yargs: Argv): void {
             const requirements = calculateHouseRequirements(
                 args.width,
                 args.length,
-                args.inches,
-                args.feet,
+                args.units
             );
 
             console.log( requirements );

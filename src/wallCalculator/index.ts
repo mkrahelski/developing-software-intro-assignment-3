@@ -136,8 +136,9 @@ export function calculateHouseRequirements(
     widthInFeet: number,
     lengthInFeet: number,
     //Attemtping to solve by adding 2 more variables.
-    inches:string,
-    feet:string, //is greyed out because it's un-used. This and other ui tool tips brought to you by transparency
+    units: string,
+    
+    //is greyed out because it's un-used. This and other ui tool tips brought to you by transparency
    // are these technically just variables, don't we then need a clarification, length and width are interchangeble
 )
 
@@ -163,7 +164,7 @@ export function calculateHouseRequirements(
 //I think I am also missing that you have to adjust width in feet and length in feet for these operations. Before.
 //THe rest of the operation but as modifiers go. It seems simple enough.
 {
-    if (inches == "inches")
+    if (units == "inches")
     { 
         widthInFeet/12;
         lengthInFeet/12;

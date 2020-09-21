@@ -164,17 +164,24 @@ export function calculateHouseRequirements(
 //I think I am also missing that you have to adjust width in feet and length in feet for these operations. Before.
 //THe rest of the operation but as modifiers go. It seems simple enough.
 {
+    let widthToFeetConversion 
+    let lengthToFeetConversion
+//if u flag is inches. Does this conversion. otherise nope. :I 
     if (units == "inches")
     { 
-        widthInFeet/12;
-        lengthInFeet/12;
+        widthToFeetConversion = widthInFeet/12;
+        lengthToFeetConversion = lengthInFeet/12;
         //problem is I don't know if it works.
+             //the problem is really two fold. This technically works but isn't wholly bound.
     }
+
+
+
     //if it already converts feet to inches we just have a problem if it's already in inches :)
 
     // convert feet to inches
-    const outerWidthOfHouse = convertFeetToInches(widthInFeet);
-    const outerLengthOfHouse = convertFeetToInches(lengthInFeet);
+    const outerWidthOfHouse = convertFeetToInches(widthToFeetConversion);
+    const outerLengthOfHouse = convertFeetToInches(lengthToFeetConversion);
 
     // calculate the space inbetween corner posts
     const innerWidthOfHouse = outerWidthOfHouse - post_WIDTH * 2;

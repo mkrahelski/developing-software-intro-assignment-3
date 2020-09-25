@@ -1,6 +1,24 @@
 import { Arguments, Argv } from "yargs";
 import { calculateHouseRequirements } from "../wallCalculator";
 
+
+
+
+export function memeWoodNeeded(yargs:Argv):void {
+//so in theory we export meme wood needed. Which has flags for name. And flags for extracting name?
+
+
+
+
+
+}
+
+
+
+
+
+
+
 export function calcWoodNeeded(yargs: Argv): void {
     
     // create a new yargs "command"

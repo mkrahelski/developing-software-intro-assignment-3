@@ -72,7 +72,7 @@ Parameters:
   - name: `string`
     - The name of the house
 
-Returns:
+Returns:  
   - `House`
     - Instance of `House`
 

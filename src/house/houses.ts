@@ -2,6 +2,9 @@ import fs = require("fs");
 import { IHouse, IHouseProperties, IWallCalculatorResponse } from "./interface";
 import { House } from ".";
 
+
+
+
 export class Houses extends Map<string, IHouse> {
     private static data = {
         path: `${__dirname}/../data`,

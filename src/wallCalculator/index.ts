@@ -1,3 +1,9 @@
+
+
+
+
+
+
 const post_WIDTH = 3.5;
 const BOARD_LENGTH = 8 * 12;
 const WASTE_MULTIPLIER = 0.1;
@@ -110,7 +116,7 @@ function getLastSectionSize(inches: number, posts: number) {
     return lastSectionSize;
 }
 
-function buildWall(inches: number) {
+export function buildWall(inches: number) {
     // get required posts
     const requiredposts = getRequiredpostsInLength(inches);
     const fullSections = getFullSections(inches, requiredposts);
@@ -203,6 +209,7 @@ export function calculateHouseRequirements(
 
     return {
         studs: studs,
+// So plates are basically floor+ ceiling, this calculation is done some where I just need it as a return. Here??
         posts: posts,
     };
 }

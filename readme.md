@@ -33,3 +33,6 @@ npm start -- calc-wood-needed -w 588 -l 264 -u inches
 ~~~~~~
 
 -----------------------
+
+
+ npm start -- saving-this-house -n "Mikita"

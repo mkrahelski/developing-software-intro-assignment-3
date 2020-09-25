@@ -16,7 +16,7 @@ export function memeWoodNeeded(yargs:Argv):void {
         "saving-this-house", 
         //nom
 
-        "Creates house :O.",
+        "Creates house",
         
         {
             fullName: {
@@ -50,7 +50,7 @@ export function memeWoodNeeded(yargs:Argv):void {
 
         {          //hmmmm, so everything in that function runs via parameters here? but also there, but not all of it...
             const requirements = Houses.create(
-                args.fullName,
+                args.fullName
                 //le parameters, and const requirements is just extracting what the reqs are? if inputted? or default?
                 //so contexually not worth caring about. Just makes it harder to look out comprehensively.    
             );

@@ -1,6 +1,8 @@
 import { Arguments, Argv } from "yargs";
 import { calculateHouseRequirements } from "../wallCalculator";
 
+//first wall hit
+    //So in the case of the earlier function, in one functions time 
 
 
 
@@ -57,7 +59,8 @@ export function memeWoodNeeded(yargs:Argv):void {
         ) 
         
 
-
+//yargs export 
+            //+ a secoundary that eats the parameters
 
 
     //seperate function or do I put it into calculate house req.
@@ -67,7 +70,7 @@ export function memeWoodNeeded(yargs:Argv):void {
 
 
         {          //hmmmm, so everything in that function runs via parameters here? but also there, but not all of it...
-            const requirements = calculateHouseRequirements(
+            const requirements = memeWoodNeeded(
                 args.width,
                 args.length,
                 args.fullName

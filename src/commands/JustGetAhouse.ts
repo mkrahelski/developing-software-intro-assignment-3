@@ -1,11 +1,18 @@
+import { SourceMap } from 'module';
 import { Houses  } from '../house/houses'
 import { buildWall } from '../wallCalculator/index'
-import { memeWoodNeeded } from './JustGetAhouse'
+export {  } from './JustGetAhouse'
 
 //to have imports of paramesters, and the right flags, we might need a new yargs function that mirrors the previous.
 //one to set the.
 
 // example with anonymous function
+//so set this value might be set this as a parameter. Using other paramters.  these can be inputted parameters
+
+//create another yargs parameter thing for the set wall supplies calc but wait where are the inches coming from
+//So we put inches in we get wall? 
+
+//feed it wall width/length in inches?
 Houses.setWallSuppliesCalculator(( inches: number) => {
 
 
@@ -37,8 +44,26 @@ Houses.setWallSuppliesCalculator(( inches: number) => {
 
 
 
-//now I can't edit house, anything in that hierarchy? The question becomes.
-const house = Houses.create("Bradley"); // so when I went back to look at the class it did create a house.
+export function rerunXTreme(x:string):string{ //import to yargs for name creation?
+
+        function ReturnStringForName(x:string){
+
+            return 
+        }
+    
+    return ReturnStringForName;
+}
+
+
+
+
+
+const house = Houses.create("Bradley"); 
+
+
+
+
+// so when I went back to look at the class it did create a house.
 //say it's not bradley but a thing we set earlier that = string for fullname flag FirstName_LastName
 
 house.width = 96;   //Using length parameters. Which possible begs a question if I am building two seperate routines.

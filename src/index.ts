@@ -2,7 +2,7 @@
 // solved the complexities of parsing command line arguments
 import yargs = require('yargs');
 import { calcWoodNeeded } from './commands/calc-wood-needed';
-import { memeWoodNeeded } from './commands/calc-wood-needed';
+import { memeWoodNeeded } from './commands/calc-wood-needed'; //export responsible for NameCreation
 import { Houses } from '../src/house/houses'
 
 
@@ -11,14 +11,10 @@ import { Houses } from '../src/house/houses'
 //there is a 3 step exchange.
 
 
-const house = Houses.create("Bradley"); 
+memeWoodNeeded( yargs ); //probably creates houses. OR so the theory goes.
 
 
-memeWoodNeeded( yargs );
-
-
-
-calcWoodNeeded( yargs );
+calcWoodNeeded( yargs ); //calculates wood
 
 // tell yargs to include the --help flag
 yargs.help();

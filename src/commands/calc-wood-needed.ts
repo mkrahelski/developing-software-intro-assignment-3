@@ -1,5 +1,7 @@
 import { Arguments, Argv } from "yargs";
 import { calculateHouseRequirements } from "../wallCalculator";
+import { Houses  } from '../house/houses'
+
 
 //first wall hit
     //So in the case of the earlier function, in one functions time 
@@ -17,39 +19,16 @@ export function memeWoodNeeded(yargs:Argv):void {
         "Calculates wall length, saves wall length, extracts wall length.",
         
         {
-            width: {
-                type: "number",
-                alias: "w",
-                description: "The width of the house",
-            },
-
-            length: {
-                type: "number",
-                alias: "l",
-                description: "The length of the house",
-            },
-
             fullName: {
                 type: "string",
                 alias: "n",
                 description: "Declaration of fullname.",
             },
-
-            
-
-
-
-
-
         },
 
         // define the function we want to run once the arguments are parsed
         function (
             args: Arguments<{
-                width: number;
-                length: number;
-                w: number;
-                l: number;
              //added
              //so do I need to list them both, alias/parameter??
                n: string;
@@ -70,10 +49,8 @@ export function memeWoodNeeded(yargs:Argv):void {
 
 
         {          //hmmmm, so everything in that function runs via parameters here? but also there, but not all of it...
-            const requirements = memeWoodNeeded(
-                args.width,
-                args.length,
-                args.fullName
+            const requirements = Houses.create(
+                args.fullName,
                 //le parameters, and const requirements is just extracting what the reqs are? if inputted? or default?
                 //so contexually not worth caring about. Just makes it harder to look out comprehensively.    
             );

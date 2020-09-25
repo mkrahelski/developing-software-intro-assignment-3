@@ -44,24 +44,20 @@ Houses.setWallSuppliesCalculator(( inches: number) => {
 
 
 
-export function rerunXTreme(x:string):string{ //import to yargs for name creation?
-
-        function ReturnStringForName(x:string){
-
-            return 
-        }
     
-    return ReturnStringForName;
-}
+    //is it fine to have x as just a string an outptu x?
+
+//amazing 
+/*
+const house = Houses.create();
+
+//create is a function
+// i don't often describe code as jerry rigging, but it seems like the above
 
 
 
 
-
-const house = Houses.create("Bradley"); 
-
-
-
+//are the properties set below following sequentially to basicall set the house. 
 
 // so when I went back to look at the class it did create a house.
 //say it's not bradley but a thing we set earlier that = string for fullname flag FirstName_LastName

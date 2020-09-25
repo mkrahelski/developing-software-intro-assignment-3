@@ -11,7 +11,9 @@ import { Houses } from '../src/house/houses'
 //there is a 3 step exchange.
 
 
-memeWoodNeeded( yargs ); //probably creates houses. OR so the theory goes.
+    //memeWoodNeeded( yargs ); //probably creates houses. OR so the theory goes.
+//works to enter a name doens't actually do anything.
+//technically it does add a name to the command 
 
 
 calcWoodNeeded( yargs ); //calculates wood

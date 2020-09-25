@@ -1,7 +1,11 @@
+import yargs = require('yargs');
+import { memeWoodNeeded } from './calc-wood-needed'; 
+//^above is a test. Unsure how to use sourcemap.
 import { SourceMap } from 'module';
 import { Houses  } from '../house/houses'
 import { buildWall } from '../wallCalculator/index'
 export {  } from './JustGetAhouse'
+
 
 //to have imports of paramesters, and the right flags, we might need a new yargs function that mirrors the previous.
 //one to set the.
@@ -16,7 +20,8 @@ export {  } from './JustGetAhouse'
 
 
 
-
+// node.js JustGetAHouse
+//add yargs here? or import in the inputs.
 Houses.setWallSuppliesCalculator(( inches: number) => {
 
 
@@ -28,13 +33,11 @@ Houses.setWallSuppliesCalculator(( inches: number) => {
         plates: 0 // set this value
     }
 
-    //is it possible that this is populated by the build wall functionality?
-
 });
 
 
 
-const house = Houses.create("Mikita");
+const house = Houses.create("Well this is eggcelent");
 house.width = 96;   
 house.length = 56;
 Houses.save( house );

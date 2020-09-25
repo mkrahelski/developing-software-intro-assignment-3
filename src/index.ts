@@ -5,15 +5,27 @@ import { calcWoodNeeded } from './commands/calc-wood-needed';
 import { memeWoodNeeded } from './commands/calc-wood-needed'; //export responsible for NameCreation
 import { Houses } from '../src/house/houses'
 
+import { SourceMap } from 'module';
+import { buildWall } from './wallCalculator/index'
+
+
+
+
+
+
 
 //yargs thing is fundumentally imported here. Export of main function goes here.
 //Function that actually does the stuff is imported into yargs, and then those parameters set by args go into func.
 //there is a 3 step exchange.
 
 
-    //memeWoodNeeded( yargs ); //probably creates houses. OR so the theory goes.
+memeWoodNeeded( yargs ); //probably creates houses. OR so the theory goes.
+
+
 //works to enter a name doens't actually do anything.
 //technically it does add a name to the command 
+
+
 
 
 calcWoodNeeded( yargs ); //calculates wood
@@ -23,3 +35,22 @@ yargs.help();
 
 // tell yargs to parse the parameters
 yargs.parse();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

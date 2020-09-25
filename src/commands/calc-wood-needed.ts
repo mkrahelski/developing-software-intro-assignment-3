@@ -16,7 +16,7 @@ export function memeWoodNeeded(yargs:Argv):void {
         "saving-this-house", 
         //nom
 
-        "Calculates wall length, saves wall length, extracts wall length.",
+        "Creates house :O.",
         
         {
             fullName: {
@@ -54,7 +54,7 @@ export function memeWoodNeeded(yargs:Argv):void {
                 //le parameters, and const requirements is just extracting what the reqs are? if inputted? or default?
                 //so contexually not worth caring about. Just makes it harder to look out comprehensively.    
             );
-
+                
             console.log( requirements );
         }
   

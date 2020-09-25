@@ -1,26 +1,13 @@
-import yargs = require('yargs');
-import { memeWoodNeeded } from './calc-wood-needed'; 
 //^above is a test. Unsure how to use sourcemap.
 import { SourceMap } from 'module';
 import { Houses  } from '../house/houses'
 import { buildWall } from '../wallCalculator/index'
-export {  } from './JustGetAhouse'
-
-
-//to have imports of paramesters, and the right flags, we might need a new yargs function that mirrors the previous.
-//one to set the.
-
-// example with anonymous function
-//so set this value might be set this as a parameter. Using other paramters.  these can be inputted parameters
-
-//create another yargs parameter thing for the set wall supplies calc but wait where are the inches coming from
-//So we put inches in we get wall? 
-
-//feed it wall width/length in inches?
+import { House } from '../house';
 
 
 
-// node.js JustGetAHouse
+
+
 //add yargs here? or import in the inputs.
 Houses.setWallSuppliesCalculator(( inches: number) => {
 
@@ -37,7 +24,7 @@ Houses.setWallSuppliesCalculator(( inches: number) => {
 
 
 
-const house = Houses.create("Well this is eggcelent");
+const house = Houses.create("Unsure of how to actually have any inputs here if yargs doesn't work.");
 house.width = 96;   
 house.length = 56;
 Houses.save( house );

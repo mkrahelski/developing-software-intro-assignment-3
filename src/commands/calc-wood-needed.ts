@@ -7,15 +7,84 @@ import { calculateHouseRequirements } from "../wallCalculator";
 export function memeWoodNeeded(yargs:Argv):void {
 //so in theory we export meme wood needed. Which has flags for name. And flags for extracting name?
 
+    yargs.command(
+
+        "saving-this-house", 
+        //nom
+
+        "Calculates wall length, saves wall length, extracts wall length.",
+        
+        {
+            width: {
+                type: "number",
+                alias: "w",
+                description: "The width of the house",
+            },
+
+            length: {
+                type: "number",
+                alias: "l",
+                description: "The length of the house",
+            },
+
+            fullName: {
+                type: "string",
+                alias: "n",
+                description: "Declaration of fullname.",
+            },
+
+            
 
 
 
 
+
+        },
+
+        // define the function we want to run once the arguments are parsed
+        function (
+            args: Arguments<{
+                width: number;
+                length: number;
+                w: number;
+                l: number;
+             //added
+             //so do I need to list them both, alias/parameter??
+               n: string;
+               fullName: string;
+
+            }>
+        ) 
+        
+
+
+
+
+    //seperate function or do I put it into calculate house req.
+    // might need to read more in depth through it.
+
+    //I think I found the pain point. need to inject the string.
+
+
+        {          //hmmmm, so everything in that function runs via parameters here? but also there, but not all of it...
+            const requirements = calculateHouseRequirements(
+                args.width,
+                args.length,
+                args.fullName
+                //le parameters, and const requirements is just extracting what the reqs are? if inputted? or default?
+                //so contexually not worth caring about. Just makes it harder to look out comprehensively.    
+            );
+
+            console.log( requirements );
+        }
+  
+
+    );
 }
 
 
 
-
+//------------------------------------------------------------------------------------------------------
 
 
 

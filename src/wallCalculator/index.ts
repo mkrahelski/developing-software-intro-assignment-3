@@ -141,41 +141,18 @@ function accountForWaste(items: number): number {
 export function calculateHouseRequirements(
     widthInFeet: number,
     lengthInFeet: number,
-    //Attemtping to solve by adding 2 more variables.
     units: string,
     
-    //is greyed out because it's un-used. This and other ui tool tips brought to you by transparency
-   // are these technically just variables, don't we then need a clarification, length and width are interchangeble
 )
-
-    //is it here where the overload starts, as the imported function has only 2 slots though who knows
-
-
-//I think this is where it would go? Seems bout right.
-//export >fun> widthinfeet input?length in feet input.
-//notation just surprised me.
-
-//Q1 Fithinfeet:number
-//Q2 Lengthinfeet:number, what is this related 2. THe function is imported into yargs but the command isn't
-//directly referenced
-/*
-*/
-
-//logicking it up.
-    //the input below is designed for inches
 
 // if ( theInput , equality, inches /12)
 // else meaning it's not inches. It would have to be feet. *12. So that the below can basically function the same.
 
-//I think I am also missing that you have to adjust width in feet and length in feet for these operations. Before.
-//THe rest of the operation but as modifiers go. It seems simple enough.
 {
     let widthToFeetConversion = widthInFeet;
     let lengthToFeetConversion = lengthInFeet;
-    //I can't think of a cleaner way to do this right now.
     //basically equal to widthin feet. Code is read top to bottom.
     //if the if doesn't trigger. It just works like normal if not we reset the variable.
-    //If it doesn't work I'll add 2 more variables and brute force it. -Simplicity and -Optimization 
 
 
 //if u flag is inches. Does this conversion. otherise nope. :I 
@@ -209,7 +186,6 @@ export function calculateHouseRequirements(
 
     return {
         studs: studs,
-// So plates are basically floor+ ceiling, this calculation is done some where I just need it as a return. Here??
         posts: posts,
     };
 }

@@ -115,7 +115,6 @@ export function calcWoodNeeded(yargs: Argv): void {
                 w: number;
                 l: number;
              //added
-             //so do I need to list them both, alias/parameter??
                u: string;
                units: string;
 
@@ -126,10 +125,6 @@ export function calcWoodNeeded(yargs: Argv): void {
 
 
 
-    //seperate function or do I put it into calculate house req.
-    // might need to read more in depth through it.
-
-    //I think I found the pain point. need to inject the string.
 
 
         {          

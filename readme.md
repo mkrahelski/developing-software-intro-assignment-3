@@ -34,6 +34,19 @@ npm start -- calc-wood-needed -w 588 -l 264 -u inches
 
 -----------------------
 
-## 
+## Partial Functionality 'Naming a house'
 
- npm start -- saving-this-house -n "Mikita"
+Using the command below one can input their name and see several outputted features of a house. Though one can not currently save this. It is a step forward to meet spec requirements.
+~~~~
+ npm start -- saving-this-house -n ""
+~~~~
+
+### Here are some exampl s of this functionality
+
+~~~~~~
+npm start -- saving-this-house -n "Michael Richards"
+npm start -- saving-this-house -n "Ricardo"
+npm start -- saving-this-house -n "Levin Kraft"
+~~~~~~~~
+
+

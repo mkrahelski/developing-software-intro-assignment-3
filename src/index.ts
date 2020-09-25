@@ -10,18 +10,7 @@ import { SourceMap } from 'module';
 import { buildWall } from './wallCalculator/index'
 
 
-
-
-
-
-
-//yargs thing is fundumentally imported here. Export of main function goes here.
-//Function that actually does the stuff is imported into yargs, and then those parameters set by args go into func.
-//there is a 3 step exchange.
-
-
 memeWoodNeeded( yargs ); //probably creates houses. OR so the theory goes.
-
 
 //works to enter a name doens't actually do anything.
 //technically it does add a name to the command 
@@ -36,6 +25,10 @@ yargs.help();
 
 // tell yargs to parse the parameters
 yargs.parse();
+
+
+
+
 
 /* 
 
@@ -57,7 +50,8 @@ Houses.setWallSuppliesCalculator(( inches: number) => {
 
 });
 
-
+//I found no way to parametrize the "String" with a variable present in another function instead,
+//isolated in a yargs parameter. But without it's adjacent code it doesn't execute correctly.
 
 const house = Houses.create("String.");
 house.width = 96;   
